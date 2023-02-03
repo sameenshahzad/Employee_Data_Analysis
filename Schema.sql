@@ -1,18 +1,13 @@
-﻿-- Exported from QuickDBD: https://www.quickdatabasediagrams.com/
--- NOTE! If you have used non-SQL datatypes in your design, you will have to change these here.
-
--- Modify this code to update the DB schema diagram.
--- To reset the sample schema, replace everything with
--- two dots ('..' - without quotes).
+﻿-- Creating Tables 
 
 CREATE TABLE "employees" (
     "emp_no" varchar(100)   NOT NULL,
     "emp_title_id" varchar(100)   NOT NULL,
-    "birth_date" date   NOT NULL,
+    "birth_date" DATE   NOT NULL,
     "first_name" varchar(100)   NOT NULL,
     "last_name" varchar(100)   NOT NULL,
     "sex" varchar(100)   NOT NULL,
-    "hire_date" varchar(100)   NOT NULL,
+    "hire_date" DATE   NOT NULL,
     CONSTRAINT "pk_employees" PRIMARY KEY (
         "emp_no"
      )
